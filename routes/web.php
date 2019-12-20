@@ -11,10 +11,16 @@
 |
 */
     //Rutas para logearte
+    Auth::routes();
 
+    Route::get('/home', 'HomeController@index')->name('home');
 
     // Ruta del inicio
-    Route::get('/', 'HomeController@getIndex');
+    Route::get('/', function () {
+        return view('welcome');        
+    });
+
+    Route::get('/home', 'HomeController@getIndex');
     
 
     // Rutas para imprimir cartas
@@ -29,3 +35,4 @@
 
 
 ?>
+
