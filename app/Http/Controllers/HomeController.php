@@ -13,7 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // Esto es para saber si estas logeado o no
+        // $this->middleware('auth');
     }
 
     /**
@@ -21,7 +22,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function getIndex()
     {
         return view('home');
     }
