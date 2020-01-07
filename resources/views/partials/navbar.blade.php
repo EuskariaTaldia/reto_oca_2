@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/reto_oca/public/home" style="color:#777"><span style="font-size:15pt">&#9820;</span> Logo</a>
+        <a class="navbar-brand" href="/reto_oca/public/home" style="color:#777">
+            <object data="../resources/images/logo.svg" type="image/svg+xml" class="logo">
+                <img src="../resources/images/logo.png"/>
+            </object>        
+        DESAYUNOS FEMINISTAS</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

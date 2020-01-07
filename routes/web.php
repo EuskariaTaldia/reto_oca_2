@@ -51,14 +51,14 @@
         //     }
         // });
 
-        Route::post('/login', 'LoginController@getLogin');
+        Route::post('/login', 'Auth\LoginController@getLogin');
 
 
         Route::post('/logout', function () { 
             return view('home'); 
         });
 
-        Route::post('/register', 'RegisterController@getRegister');
+        Route::post('/register', 'Auth\RegisterController@getRegister');
 
     });
    

@@ -40,7 +40,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    public function getLogin() {
+    public function getRegister() {
         return view('auth.register'); 
     }
 
@@ -70,6 +70,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'user' => $data['user'],
             'password' => Hash::make($data['password']),
         ]);
     }
